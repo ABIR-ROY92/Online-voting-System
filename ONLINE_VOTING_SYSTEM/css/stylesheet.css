@@ -1,0 +1,23 @@
+body{
+   
+    background-color: #55efc4;
+}
+#headerSection {
+    padding: 10px;
+}
+input{
+        padding: 10px;
+     border-radius: 5px;
+   
+}
+#dropbox{
+       padding: 10px;
+     border-radius: 5px;
+     width: 13%;
+}
+#button {
+    padding: 7px;
+     border-radius: 7px;
+     background-color:  #48dbfb;
+     color :white;
+}

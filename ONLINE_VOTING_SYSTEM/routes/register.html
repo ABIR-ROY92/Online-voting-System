@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <style>
+        #Address {
+            width: 25%;
+        }
+
+        #image {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            width: 27%;
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        #role {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            width: 27%;
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        #role select {
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+     <center>
+<body>
+    <h1>E-Voting System</h1>
+    <hr>
+    <h3>Registration</h3>
+    <form action="../api/register.php" method="post" enctype="multipart/form-data">
+
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="number" name="mobile" placeholder="Enter Mobile"><br><br>
+
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="password" name="cpassword" placeholder="Confirm Password"><br><br>
+
+        <input id="Address" type="text" name="Address" placeholder="Address"><br><br>
+
+        <div id="image">
+            Upload image: <input type="file" name="photo">
+        </div>
+        <br>
+
+        <div id="role">
+            Select your role:  
+            <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+        </div>
+        <br>
+
+        <button type="submit" 
+                style="padding: 7px; border-radius: 7px; background-color: #48dbfb; color: white;">
+            Register
+        </button><br><br>
+
+        Already user? <a href="../index.html">Login</a>
+
+    </form>
+    </center>
+</body>
+</html>
